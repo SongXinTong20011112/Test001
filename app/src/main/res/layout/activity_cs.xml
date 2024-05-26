@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/left" />
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/myBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clickable="true"
+        app:indicator_drawable_selected="@drawable/point_white"
+        app:indicator_drawable_unselected="@drawable/point_gray"
+        app:indicator_height="10dp"
+        app:indicator_margin="5dp"
+        app:indicator_width="10dp" />
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="WebView" />
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="SetActivity" />
+
+
+</LinearLayout>

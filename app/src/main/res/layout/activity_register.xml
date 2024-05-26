@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <util.ScreenAdapterLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edt_shape"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:hint="使用电话号码注册"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="horizontal" />
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edt_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="horizontal" />
+
+            <ng.max.slideview.SlideView
+                android:id="@+id/slideView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sv_buttonBackgroundColor="@color/white"
+                app:sv_buttonImage="@mipmap/ic_chevron_double_right_pink"
+                app:sv_slideBackgroundColor="@color/red"
+                app:sv_slideText="滑动完成注册"
+                app:sv_slideTextColor="@color/white" />
+
+        </LinearLayout>
+
+    </util.ScreenAdapterLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:id="@+id/image"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="这些数据是用来测试的真的 不骗你哦  这些数据是用来测试的真的 不骗你哦"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:id="@+id/tv_title"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/xzq"
+                    android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦这些数据是用来测试的真的 不骗你哦"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">防诈蛋君</string>
+    <string name="account_safety">账户与安全</string>
+    <string name="memory_size">17.0MB</string>
+    <string name="exit_login">退出登录</string>
+</resources>
