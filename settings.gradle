@@ -1,0 +1,5 @@
+include ':cyn'
+include ':app'
+rootProject.name = "CivilClass"
+include ':sample'
+include ':slideview'
